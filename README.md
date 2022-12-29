@@ -1,1 +1,0 @@
-# trisandyatech.github.io
