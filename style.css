@@ -1,0 +1,23 @@
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+a {
+    color: blue;
+}
+*{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+#body-correction{
+    margin: 36px;
+    padding-top: 36px;
+}
+.head-name{
+    text-align: center;
+}
