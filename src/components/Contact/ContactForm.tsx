@@ -8,32 +8,29 @@ const ContactForm = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    fetch(
-      "https://hooks.slack.com/services/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",
-      {
-        method: "POST",
-        body: JSON.stringify({
-          blocks: [
-            {
-              type: "section",
-              fields: [
-                {
-                  type: "mrkdwn",
-                  text: `*${name}* _(${email})_`,
-                },
-              ],
-              text: {
-                text,
-                type: "plain_text",
+    fetch(process.env.SLACK_WEBHOOK_URL, {
+      method: "POST",
+      body: JSON.stringify({
+        blocks: [
+          {
+            type: "section",
+            fields: [
+              {
+                type: "mrkdwn",
+                text: `*${name}* _(${email})_`,
               },
+            ],
+            text: {
+              text,
+              type: "plain_text",
             },
-          ],
-          username: name,
-          as_user: true,
-          icon_emoji: ":incoming_envelope:",
-        }),
-      },
-    );
+          },
+        ],
+        username: name,
+        as_user: true,
+        icon_emoji: ":incoming_envelope:",
+      }),
+    });
   };
 
   return (
