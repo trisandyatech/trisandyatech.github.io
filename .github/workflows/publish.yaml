@@ -35,7 +35,7 @@ jobs:
 
       - name: Build with Next.js 🏗️
         run: |
-          set SLACK_WEBHOOK_URL=$webhook
+          set NEXT_PUBLIC_SLACK_WEBHOOK_URL=$webhook
           npx next build
 
       - name: Upload artifact 📡
