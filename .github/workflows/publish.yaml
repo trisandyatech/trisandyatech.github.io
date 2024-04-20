@@ -34,9 +34,7 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
-        run: |
-          set NEXT_PUBLIC_SLACK_WEBHOOK_URL=$webhook
-          npx next build
+        run: NEXT_PUBLIC_SLACK_WEBHOOK_URL=$webhook npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
