@@ -15,11 +15,11 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Features />
+      {/* <Features /> */}
       {/* <Video /> */}
       {/* <Brands /> */}
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <AboutSectionOne /> */}
+      {/* <AboutSectionTwo /> */}
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
       {/* <Blog /> */}

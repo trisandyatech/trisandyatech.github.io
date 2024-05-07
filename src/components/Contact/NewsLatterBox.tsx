@@ -8,11 +8,11 @@ const NewsLatterBox = () => {
   return (
     <div className="relative z-10 mb-12 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:mb-5 lg:p-8 xl:p-11">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe now for future updates.
+        Join the Movement
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Be the first to know about our latest news, product releases, and
-        exclusive offers by subscribing to our updates.
+        Be among the first to experience our game-changing features. Sign up now
+        to gain early access and stay updated on our latest developments.
       </p>
       <div>
         <input
